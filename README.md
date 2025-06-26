@@ -18,7 +18,7 @@ First, get the source code and build. You need cargo downloaded obviously
 git clone https://github.com/CoolElectronics/clamide
 cd clamide
 cargo build --release
-sudo cp target/release/clamide /usr/bin/clamide
+sudo cp target/x86_64-unknown-linux-musl/release/clamide /usr/bin/clamide
 ```
 See /examples to learn how to use the program.
 Note that this will only function on x86_64 bit computers running linux. This is partially because I'm lazy, but also because the authors of the ptrace library are lazy as well and never implemented it upstream.
